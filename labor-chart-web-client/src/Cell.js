@@ -15,7 +15,7 @@ class Cell extends Component {
     }
 
     onCellChange = (event) => {
-        setState({
+        this.setState({
             cellValue: event.target.value,
             selected: this.state.selected
         });
@@ -23,7 +23,7 @@ class Cell extends Component {
 
     onKeyPress = (event) => {
         if(event.key === 'Enter') {
-            this.props.validateCell(cellValue);
+            this.props.validateCell(this.state.cellValue);
         }
     }
 
@@ -41,8 +41,8 @@ class Cell extends Component {
             return (
                 <div 
                     className='selected-cell'
-                    onChange={onCellChange}
-                    onKeyPress={onKeyPress}
+                    onChange={this.onCellChange}
+                    onKeyPress={this.onKeyPress}
                 >
                     {this.state.value}
                 </div>
@@ -51,7 +51,7 @@ class Cell extends Component {
             return (
                 <div 
                     className='non-selected-cell'
-                    onCellClick={onStaticCellClick}
+                    onCellClick={this.onStaticCellClick}
                 >
                     {this.props.value}
                 </div>
@@ -61,3 +61,5 @@ class Cell extends Component {
 
     }
 }
+
+export default Cell;

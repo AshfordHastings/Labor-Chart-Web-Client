@@ -3,6 +3,13 @@ import Cell from './Cell'
 
 
 class Position extends Component {
+
+    getEndTime = (string, length) => {
+        var time = string.split(':');
+        var newHour = time[0] + length;
+        return newHour + time[1];
+    };
+
     render() {
         /*
             props: position, laborSlots
@@ -13,30 +20,29 @@ class Position extends Component {
             Hours
             MTWThF laborers
         */
-        getEndTime = (string, length) => {
-            time = time.split(':');
-            var newHour = time[0] + length;
-            return newHour + time[1];
-        }
+
 
         const cells = [];
         
         cells.push(
             
             <Cell // Position name
+                key='name'
                 editable={false}
                 value={this.props.position.name}
             />,
 
             <Cell // StartTime
+                key='startTime'
                 editable={false}
-                value={this.props.position.stringTime}
+                value={this.props.position.startTime}
             />,
-
+            /*
             <Cell // EndTime
-            editable={false}
-            value={getEndTime(this,props.stringTime, this.props.length)}
+                editable={false}
+                value={this.getEndTime(this.props.position.startTime, this.props.position.length)}
             />
+            */
 
         )
 

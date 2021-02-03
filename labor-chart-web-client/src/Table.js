@@ -3,21 +3,21 @@ import LaborSlot from './Position';
 
 class Table extends Component {
     state = {
-        positions = [],
-        laborSlots = []
+        positions: this.props.positions,
+        laborSlots: []
     }
 
     getLaborSlotsFromPosition = (position) => {
         this.props.getLaborSlotsFromPosition(position);
     }
 
-    render() {
+    render(props) {
         const rows = [];
-        for(let i = 0; i < this.props.positions.length; i++) {
+        for(let i = 0; i < this.state.positions.length; i++) {
             rows.push(
                 <LaborSlot 
-                    position={this.positions.length}
-                    slots={getLaborSlotsFromPosition(this.positions[i])} 
+                    position={this.state.positions.length}
+                    //slots={getLaborSlotsFromPosition(this.positions[i])} 
                 />
             )
         }
@@ -27,12 +27,6 @@ class Table extends Component {
 
         );
     }
-
-    /*
-    laborSlot = {
-        dayOfWeek:
-        position:
-        TimeSlot:
-        Cooper:
-    }
 }
+
+export default Table;
