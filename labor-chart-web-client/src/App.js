@@ -9,7 +9,7 @@ class App extends Component {
     super();
     console.log(Seed.positions);
   }
-
+/*
   render() {
     return(
       <Table 
@@ -17,5 +17,15 @@ class App extends Component {
       />
     )
   };
+  */
+
+  render() {
+    return(
+      <div>
+        Hello, my name is Ashford.
+      </div>
+    );
+  }
+
 }
 export default App;

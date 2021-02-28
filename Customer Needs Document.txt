@@ -1,0 +1,34 @@
+Customer Needs
+
+The application should store and persist user information.
+The application shuold be accessed via a web browser and compatible with all web application.
+The application should be accessible by mobile devices, including iOS and Android.
+
+The application should allow for users to login securely with a username and password.
+The application should store users login information securely.
+Users should only have one login account.
+The application should allow for the creation of new accounts.
+The application should remember each users' login information.
+The application should allow only informaton relevent to each user to be viewed by that user.
+The application should provide different access and functionality for the Labor Officer and the Membership Coordinator.
+
+The application should give users the chance to choose their timing avaliablility during a set time period at the beginning of each semester.
+The applcation should allow members to change their time avaliability throughout the semester.
+The application should allow members to select their preferred labor positions.
+The application should allow users to contact or send messages to the Labor Officer regarding their current labor positions.
+The application should display names and labor positions of all other members as well to each member.
+The application should send reminders to members at the time of their labor.
+The application should give member choices regarding the times of notification.
+
+The applcation should allow members to to no-show members of the house for missed labor.
+The application should allow members to no-show other members easily.
+The applcation should allow for no-shows of members currently assigned for labor to take priority.
+The application should allow for both scheduled laborers and flex laborers to be no-showed.
+The applcation should  allow for members to redact no-shows that they have made.
+The application should allow the Labor Coordinator to redact no shows made.
+The applcation should notify members when they have been no-showed, including the member they have been no-showed by and the specific labor.
+The applcation should allow for anonymous no-shows.
+The application should store information regarding no-shows. 
+The application should send the member, Labor Coordinator, and Membership Coordinator a notification when a member has reached a certain number of no-shows.
+The application should allow members to see their past no shows, as well as no shows that have been dropped against them. 
+The application should allow the Labor Coordinator to see a record of all no-shows. 
